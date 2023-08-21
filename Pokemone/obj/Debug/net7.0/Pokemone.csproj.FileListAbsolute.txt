@@ -1,0 +1,15 @@
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\bin\Debug\net7.0\Pokemone.exe
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\bin\Debug\net7.0\Pokemone.deps.json
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\bin\Debug\net7.0\Pokemone.runtimeconfig.json
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\bin\Debug\net7.0\Pokemone.dll
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\bin\Debug\net7.0\Pokemone.pdb
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.csproj.AssemblyReference.cache
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.AssemblyInfoInputs.cache
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.AssemblyInfo.cs
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.csproj.CoreCompileInputs.cache
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.dll
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\refint\Pokemone.dll
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.pdb
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\Pokemone.genruntimeconfig.cache
+C:\Users\kathi\Desktop\learning\Pokemone_OOP\Pokeomne_OOP\Pokemone\obj\Debug\net7.0\ref\Pokemone.dll
