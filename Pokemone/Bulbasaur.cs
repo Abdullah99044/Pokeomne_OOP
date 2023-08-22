@@ -1,4 +1,5 @@
-﻿using APP;
+﻿
+using APP;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Pokemone
 {
-    internal class Charmendar : PokemoneClass
+    internal class Bulbasaur : PokemoneClass
     {
-        public Charmendar(string name, string strength, string weakness) : base(name, strength, weakness)
+
+        public Bulbasaur( string name , string strength , string weakness) : base(name , strength , weakness)
         {
             this.name = name;
             this.strength = strength;

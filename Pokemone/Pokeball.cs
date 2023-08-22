@@ -13,37 +13,82 @@ namespace Pokemone
 
          
 
-        public Charmander charmander;
+        public Charmendar charmander;
+        public Bulbasaur  bulbasaur;
+        public Squirtle   squirtle;
 
-        public void makePokemone()
+        //This function will tell the class which pokemone is inside the pokeball so he can call his battle cry
+
+        private string currnetPokemone;
+
+        public void makePokemone(string pokemoneSubClass )
         {
 
-           
+            if(pokemoneSubClass == "Charmendar" )
+            {
+                this.charmander = new Charmendar("Charmendar", "Fire", "Water");
+                this.currnetPokemone = "Charmendar";
 
-            this.charmander = new Charmander("Charmendar", "Fire", "Water");
-             
+            }
+            else if (pokemoneSubClass == "Bulbasaur" )
+            {
+
+                this.bulbasaur = new Bulbasaur("Bulbasaur", "Fire", "Water");
+                this.currnetPokemone = "Bulbasaur";
+
+            }
+            else
+            {
+                this.squirtle = new Squirtle("Squirtle", "Fire", "Water");
+                this.currnetPokemone = "Squirtle";
 
 
-             
+            }
+
         }
 
         //Throwing the pokeball
         public  void theowPokemone()
         {
- 
- 
-            charmander.battleCry();
-            
 
+            switch (this.currnetPokemone)
+            {
+                case "Charmendar":
+                    charmander.battleCry();
+                    break;
+
+                case "Bulbasaur":
+                    bulbasaur.battleCry();
+                    break;
+
+                case "Squirtle":
+                    squirtle.battleCry();
+                    break;
+
+            }
+ 
+          
         }
 
          
         public void returnPokemone()
         {
-             
 
-            
-            Console.WriteLine("Charmender returned back to the Pokeball");
+            switch (this.currnetPokemone)
+            {
+                case "Charmendar":
+                    Console.WriteLine("Charmender returned back to the Pokeball");
+                    break;
+
+                case "Bulbasaur":
+                    Console.WriteLine("Bulbasaur returned back to the Pokeball");
+                    break;
+
+                case "Squirtle":
+                    Console.WriteLine("Squirtle returned back to the Pokeball");
+                    break;
+
+            }
             
         }
 

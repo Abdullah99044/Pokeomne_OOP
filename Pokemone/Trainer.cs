@@ -22,11 +22,19 @@ namespace Pokemone
         public void makingPokeballs()
         {
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 2; i++)
             {
 
                 pokeball = new Pokeball();
-                pokeball.makePokemone();
+                pokeball.makePokemone("Charmendar");
+                belt.Add(pokeball);
+
+                pokeball = new Pokeball();
+                pokeball.makePokemone("Bulbasaur");
+                belt.Add(pokeball);
+
+                pokeball = new Pokeball();
+                pokeball.makePokemone("Squirtle");
                 belt.Add(pokeball);
 
             }

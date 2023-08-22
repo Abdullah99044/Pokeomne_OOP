@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Pokemone
 {
-    internal class Charmendar : PokemoneClass
+    internal class Squirtle : PokemoneClass
     {
-        public Charmendar(string name, string strength, string weakness) : base(name, strength, weakness)
+        public Squirtle(string name, string strength, string weakness) : base(name, strength, weakness)
         {
             this.name = name;
             this.strength = strength;

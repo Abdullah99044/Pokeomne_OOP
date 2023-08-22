@@ -25,7 +25,6 @@ namespace APP
              
 
 
-
             Console.WriteLine("Press a button to start your game");
             Console.ReadLine();
 
@@ -50,20 +49,19 @@ namespace APP
                 int index = 0;
                 int round = 0;
 
-                while (true)
-                {
-                    if ( index < 6 )
+                    for (int i = 0; i < 6; i++ )  
+                        
                     {
+                        if (index < 5)
+                            round++;
 
-                        round++;
-
-                        Console.WriteLine($" Round : {round}   ");
+                        Console.WriteLine($" Round : {index + 1}    ");
 
                         Console.WriteLine($"{trainer1.name} turn : ");
-                        trainer1.throwPokeball(0);
+                        trainer1.throwPokeball(index);
 
                         Console.WriteLine($"{trainer2.name} turn : ");
-                        trainer2.throwPokeball(0);
+                        trainer2.throwPokeball(index);
 
                         Console.WriteLine($"{trainer1.name}  : ");
                         trainer1.returningPokeballBack(index);
@@ -74,20 +72,27 @@ namespace APP
                         index++;
 
                     }
-                    else
-                    {
-                        Console.WriteLine("Games is end");
-                        break;
-                    }
+
+                Console.WriteLine("Games is end");
+
+                Console.WriteLine("Do you want to replay ? : yes/no");
+                string answer = Console.ReadLine();
+
+                if (answer == "no")
+                {
+                    break;
                 }
+                
 
             }
-
 
         }
 
 
+    }
+
+
 
       
-    }
+     
 }
