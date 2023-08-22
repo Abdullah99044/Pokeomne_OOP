@@ -1,4 +1,5 @@
 ﻿using APP;
+using Pokemone;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,10 @@ namespace APP
 
             //Player starts his game
 
+             
+
+
+
             Console.WriteLine("Press a button to start your game");
             Console.ReadLine();
 
@@ -30,37 +35,59 @@ namespace APP
 
                 //Charmendar name
 
-                Console.WriteLine("Give your Charmendar a name : ");
-                string name = Console.ReadLine();
+                Console.WriteLine("Give the first trainer a name : ");
+                string trainer1name = Console.ReadLine();
 
-                Charmander charmander = new Charmander(name, "Fire", "Water");
+                Console.WriteLine("Give the second trainer a name : ");
+                string trainer2name = Console.ReadLine();
 
+                Trainer trainer1 = new Trainer(trainer1name);
+                Trainer trainer2 = new Trainer(trainer2name);
 
-                //Charmendar battle cry
+                trainer1.makingPokeballs();
+                trainer2.makingPokeballs();
 
-                for (int i = 0; i < 10; i++)
+                int index = 0;
+                int round = 0;
+
+                while (true)
                 {
-                    charmander.battleCry();
+                    if ( index < 6 )
+                    {
+
+                        round++;
+
+                        Console.WriteLine($" Round : {round}   ");
+
+                        Console.WriteLine($"{trainer1.name} turn : ");
+                        trainer1.throwPokeball(0);
+
+                        Console.WriteLine($"{trainer2.name} turn : ");
+                        trainer2.throwPokeball(0);
+
+                        Console.WriteLine($"{trainer1.name}  : ");
+                        trainer1.returningPokeballBack(index);
+
+                        Console.WriteLine($"{trainer2.name}  : ");
+                        trainer2.returningPokeballBack(index);
+
+                        index++;
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Games is end");
+                        break;
+                    }
                 }
-
-                //Do the player wants to continue ?
-
-                Console.WriteLine("Do you want to continue ? yes/no ");
-
-                string answer = Console.ReadLine();
-
-                if (answer == "yes")
-                {
-
-                    break;
-
-                }
-
 
             }
 
 
-
         }
+
+
+
+      
     }
 }
