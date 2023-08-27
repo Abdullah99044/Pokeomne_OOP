@@ -13,33 +13,32 @@ namespace Pokemone
 
          
 
-        public Charmendar charmander;
-        public Bulbasaur  bulbasaur;
-        public Squirtle   squirtle;
+        public PokemoneClass pokemone;
+        
 
         //This function will tell the class which pokemone is inside the pokeball so he can call his battle cry
 
-        private string currnetPokemone;
+        public string currnetPokemone;
 
         public void makePokemone(string pokemoneSubClass )
         {
 
             if(pokemoneSubClass == "Charmendar" )
             {
-                this.charmander = new Charmendar("Charmendar", "Fire", "Water");
+                this.pokemone = new Charmendar("Charmendar", "Fire", "Water");
                 this.currnetPokemone = "Charmendar";
 
             }
             else if (pokemoneSubClass == "Bulbasaur" )
             {
 
-                this.bulbasaur = new Bulbasaur("Bulbasaur", "Fire", "Water");
+                this.pokemone = new Bulbasaur("Bulbasaur", "Leaf", "Fire");
                 this.currnetPokemone = "Bulbasaur";
 
             }
             else
             {
-                this.squirtle = new Squirtle("Squirtle", "Fire", "Water");
+                this.pokemone = new Squirtle("Squirtle", "Water", "Leaf");
                 this.currnetPokemone = "Squirtle";
 
 
@@ -50,23 +49,8 @@ namespace Pokemone
         //Throwing the pokeball
         public  void theowPokemone()
         {
-
-            switch (this.currnetPokemone)
-            {
-                case "Charmendar":
-                    charmander.battleCry();
-                    break;
-
-                case "Bulbasaur":
-                    bulbasaur.battleCry();
-                    break;
-
-                case "Squirtle":
-                    squirtle.battleCry();
-                    break;
-
-            }
- 
+        
+             pokemone.battleCry();
           
         }
 

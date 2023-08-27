@@ -22,77 +22,60 @@ namespace APP
 
             //Player starts his game
 
-             
 
 
             Console.WriteLine("Press a button to start your game");
             Console.ReadLine();
 
-            while (true)
+
+            //Player input the trainers names
+
+
+            Console.WriteLine("Give the first trainer a name : ");
+            string trainer1name = Console.ReadLine();
+
+            Console.WriteLine("Give the second trainer a name : ");
+            string trainer2name = Console.ReadLine();
+
+            while(true)
             {
-
-
-                //Charmendar name
-
-                Console.WriteLine("Give the first trainer a name : ");
-                string trainer1name = Console.ReadLine();
-
-                Console.WriteLine("Give the second trainer a name : ");
-                string trainer2name = Console.ReadLine();
+                //Creating trainers
 
                 Trainer trainer1 = new Trainer(trainer1name);
                 Trainer trainer2 = new Trainer(trainer2name);
 
+
+                //Making pokeballs
+
                 trainer1.makingPokeballs();
                 trainer2.makingPokeballs();
 
-                int index = 0;
-                int round = 0;
+                Arena arena = new Arena(trainer1, trainer2);
 
-                    for (int i = 0; i < 6; i++ )  
-                        
-                    {
-                        if (index < 5)
-                            round++;
 
-                        Console.WriteLine($" Round : {index + 1}    ");
 
-                        Console.WriteLine($"{trainer1.name} turn : ");
-                        trainer1.throwPokeball(index);
+                Console.WriteLine("Do you want to replay ? yes/no ");
 
-                        Console.WriteLine($"{trainer2.name} turn : ");
-                        trainer2.throwPokeball(index);
 
-                        Console.WriteLine($"{trainer1.name}  : ");
-                        trainer1.returningPokeballBack(index);
-
-                        Console.WriteLine($"{trainer2.name}  : ");
-                        trainer2.returningPokeballBack(index);
-
-                        index++;
-
-                    }
-
-                Console.WriteLine("Games is end");
-
-                Console.WriteLine("Do you want to replay ? : yes/no");
                 string answer = Console.ReadLine();
 
                 if (answer == "no")
                 {
+                     
                     break;
                 }
-                
+
+ 
 
             }
 
         }
 
-
     }
+}
 
 
 
       
      
-}
+ 
