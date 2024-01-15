@@ -10,12 +10,12 @@ namespace APP
     {
         //Fields
 
-        public string name;
-        public string strength;
-        public string weakness;
+        protected string name;
+        protected Strength strength;
+        protected Strength weakness;
 
         //Constructor
-        public   PokemoneClass(string name, string strength, string weakness)
+        public PokemoneClass()
         {
 
         }
@@ -24,10 +24,38 @@ namespace APP
         //Methods
 
         public abstract void battleCry();
-        
 
-            
-         
+
+        public abstract string Name {
+        
+            get;
+        
+        }
+
+        public abstract Strength Strength
+        {
+
+            get;
+
+        }
+
+        public abstract Strength Weakness
+        {
+
+            get;
+
+        }
 
     }
+
+    internal enum Strength
+    {
+        Fire,
+        Water,
+        Leaf
+
+    }
+
+     
 }
+ 

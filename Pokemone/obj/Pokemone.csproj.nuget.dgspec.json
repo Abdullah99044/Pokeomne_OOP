@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kathi\\Desktop\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj": {}
+    "C:\\Users\\kathi\\Desktop\\My files\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kathi\\Desktop\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj": {
+    "C:\\Users\\kathi\\Desktop\\My files\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kathi\\Desktop\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj",
+        "projectUniqueName": "C:\\Users\\kathi\\Desktop\\My files\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj",
         "projectName": "Pokemone",
-        "projectPath": "C:\\Users\\kathi\\Desktop\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj",
+        "projectPath": "C:\\Users\\kathi\\Desktop\\My files\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\Pokemone.csproj",
         "packagesPath": "C:\\Users\\kathi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kathi\\Desktop\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\obj\\",
+        "outputPath": "C:\\Users\\kathi\\Desktop\\My files\\learning\\Pokemone_OOP\\Pokeomne_OOP\\Pokemone\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

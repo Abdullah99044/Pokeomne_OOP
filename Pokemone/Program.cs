@@ -52,7 +52,8 @@ namespace APP
 
                 Arena arena = new Arena(trainer1, trainer2);
 
-
+                trainer1.belt.Clear();
+                trainer2.belt.Clear();
 
                 Console.WriteLine("Do you want to replay ? yes/no ");
 
@@ -63,9 +64,20 @@ namespace APP
                 {
                      
                     break;
+
+                }else if (answer == "yes")
+                {
+
+                    continue;
+                }
+                else
+                {
+                    break;
                 }
 
- 
+                
+
+
 
             }
 

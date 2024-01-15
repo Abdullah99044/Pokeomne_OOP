@@ -11,16 +11,22 @@ namespace Pokemone
     internal class Bulbasaur : PokemoneClass
     {
 
-        public Bulbasaur( string name , string strength , string weakness) : base(name , strength , weakness)
+        public Bulbasaur(  ) : base(  )
         {
-            this.name = name;
-            this.strength = strength;
-            this.weakness = weakness;
+            this.name = "Bulbasaur";
+            this.strength = Strength.Leaf;
+            this.weakness = Strength.Fire;
         }
 
         public override void battleCry()
         {
             Console.WriteLine($"{this.name}!!!!");
         }
+        public override string Name { get { return name; } }
+
+        public override Strength Strength { get { return this.strength; } }
+
+        public override Strength Weakness { get { return this.weakness; } }
+
     }
 }

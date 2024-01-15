@@ -47,7 +47,7 @@ namespace Pokemone
 
                 if (this.trainer1.belt.Count == 1 && this.trainer2.belt.Count == 1 )
                 {
-                    if(this.trainer1.belt[0].currnetPokemone == this.trainer2.belt[0].currnetPokemone)
+                    if(this.trainer1.belt[0].CurrnetPokemone == this.trainer2.belt[0].CurrnetPokemone)
                     {
                         break;
                     }
@@ -87,7 +87,7 @@ namespace Pokemone
         //Calculating the outcome of every round
         private void outcome( int pokeball1Index , Pokeball pokeball1, int pokeball2Index , Pokeball pokeball2 )
         {
-            if (pokeball1.pokemone.weakness == pokeball2.pokemone.strength)
+            if (pokeball1.Pokemone.Weakness == pokeball2.Pokemone.Strength)
             {
 
                 this.pokemone2 = pokeball2Index;
@@ -101,7 +101,7 @@ namespace Pokemone
                 this.trainer1.belt.RemoveAt(pokeball1Index);
 
             }
-            else if (pokeball2.pokemone.weakness == pokeball1.pokemone.strength)
+            else if (pokeball2.Pokemone.Weakness == pokeball1.Pokemone.Strength)
             {
 
                 this.pokemone1 = pokeball1Index;
@@ -114,7 +114,7 @@ namespace Pokemone
 
                 this.trainer2.belt.RemoveAt(pokeball2Index);
             }
-            else if (pokeball2.pokemone.strength == pokeball1.pokemone.strength)
+            else if (pokeball2.Pokemone.Strength == pokeball1.Pokemone.Strength)
             {
 
                 this.winner = 3;

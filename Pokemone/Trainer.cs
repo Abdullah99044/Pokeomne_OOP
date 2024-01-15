@@ -39,7 +39,9 @@ namespace Pokemone
 
             }
 
-            
+            this.CheckTheBelt();
+
+
 
         }
 
@@ -61,6 +63,14 @@ namespace Pokemone
 
             
              
+        }
+
+        private void CheckTheBelt()
+        {
+            if (this.belt.Count > 6)
+            {
+                throw new ArgumentOutOfRangeException("The belt should not has more than 6 pokeballs");
+            }
         }
 
     }

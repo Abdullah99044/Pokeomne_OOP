@@ -9,16 +9,23 @@ namespace Pokemone
 {
     internal class Charmendar : PokemoneClass
     {
-        public Charmendar(string name, string strength, string weakness) : base(name, strength, weakness)
+        public Charmendar() : base()
         {
-            this.name = name;
-            this.strength = strength;
-            this.weakness = weakness;
+            this.name = "Charmendar";
+            this.strength = Strength.Fire;
+            this.weakness = Strength.Water;
         }
 
         public override void battleCry()
         {
             Console.WriteLine($"{this.name}!!!!");
         }
+
+        public override string Name { get { return name; } }
+
+        public override Strength Strength { get { return this.strength; } }
+
+        public override Strength Weakness { get { return this.weakness; } }
+
     }
 }

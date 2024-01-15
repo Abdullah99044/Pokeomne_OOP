@@ -8,37 +8,37 @@ using System.Xml.Linq;
 
 namespace Pokemone
 {
-    internal class Pokeball
+    internal sealed class Pokeball
     {
 
          
 
-        public PokemoneClass pokemone;
+        private PokemoneClass pokemone;
         
 
         //This function will tell the class which pokemone is inside the pokeball so he can call his battle cry
 
-        public string currnetPokemone;
+        private string currnetPokemone;
 
         public void makePokemone(string pokemoneSubClass )
         {
 
             if(pokemoneSubClass == "Charmendar" )
             {
-                this.pokemone = new Charmendar("Charmendar", "Fire", "Water");
+                this.pokemone = new Charmendar();
                 this.currnetPokemone = "Charmendar";
 
             }
             else if (pokemoneSubClass == "Bulbasaur" )
             {
 
-                this.pokemone = new Bulbasaur("Bulbasaur", "Leaf", "Fire");
+                this.pokemone = new Bulbasaur();
                 this.currnetPokemone = "Bulbasaur";
 
             }
             else
             {
-                this.pokemone = new Squirtle("Squirtle", "Water", "Leaf");
+                this.pokemone = new Squirtle();
                 this.currnetPokemone = "Squirtle";
 
 
@@ -76,6 +76,14 @@ namespace Pokemone
             
         }
 
+        public PokemoneClass Pokemone
+        {
+            get { return this.pokemone; }
+        }
 
+        public String CurrnetPokemone
+        {
+            get { return this.currnetPokemone; }
+        }
     }
 }
